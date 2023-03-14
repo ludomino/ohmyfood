@@ -1,0 +1,268 @@
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  height: 100%;
+}
+
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/*********************** HEADER *****************************/
+nav {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
+  margin: auto;
+}
+
+.search {
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  font-size: 20px;
+}
+.search .location {
+  padding-right: 1%;
+}
+.search input {
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  background-color: #eaeaea;
+}
+
+.container {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+.container h2 {
+  text-align: center;
+  margin: 10px;
+}
+.container p {
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50px;
+  border: none;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 1px 4px 14px 1px #b6b6b7;
+}
+.btn:hover {
+  box-shadow: rgb(149, 157, 165) 0px 16px 40px;
+}
+/*********************************************************/
+
+
+/*********************** OPERATION *****************************/
+.operating-stage {
+  padding: 10% 5%;
+  padding-bottom: 30px;
+}
+
+.slide {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-around;
+}
+.slide .btn-slide {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  box-shadow: 1px 4px 14px 1px #d7d8d9;
+  width: 95%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.slide .btn-slide i {
+  color: grey;
+  padding-right: 10px;
+  font-size: 20px;
+}
+.slide .btn-slide p {
+  font-size: 18px;
+    font-weight: bold;
+  margin: 0;
+}
+.slide .btn-slide:hover {
+  background-color: rgba(141, 114, 175, 0.3137254902);
+}
+.slide .btn-slide:hover i {
+  color: #9356DC;
+}
+.slide .btn-slide::before {
+  content: attr(value);
+  width: 30px;
+  height: 30px;
+  background-color: #9356DC;
+  color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*********************************************************/
+
+
+
+/*********************** RESTAURANTS *****************************/
+.restaurants {
+  padding: 10% 5%;
+  background-color: #f7f7f7;
+  height: 100%;
+  padding-bottom: 10%;
+}
+
+.like {
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.like .fa-heart {
+  position: absolute;
+}
+
+.like-solid {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: opacity 0.5s ease-in-out;
+}
+.like-solid:hover, .like-solid .like-solid {
+  opacity: 1;
+}
+
+.restaurant-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 4px 14px 1px #d7d8d9;
+  margin-bottom: 5%;
+  width: 100%;
+}
+.restaurant-card a {
+  text-decoration: none;
+  color: black;
+}
+.restaurant-card .restaurant-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+.restaurant-card .restaurant-desc {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  justify-content: space-between;
+}
+
+.restaurant-card .restaurant-desc .desc-text h3 {
+  margin: 0;
+  margin-bottom: 2%;
+  padding: 0;
+}
+
+.restaurant-card .restaurant-desc .desc-text p {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+.restaurant-card .restaurant-desc .like {
+  padding-right: 15%;
+}
+
+.new {
+  position: relative;
+}
+
+.new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99E2D0;
+  color: #008766;
+  display: grid;
+  place-items: center;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 5%;
+}
+/*********************************************************/
+
+
+
+/*********************** FOOTER *****************************/
+footer {
+  padding-bottom: 26px;
+  background-color: #353535;
+}
+footer .footer-logo {
+  padding: 5% 0% 5% 5%;
+  width: 25%;
+  filter: invert(100%) sepia(8%) saturate(4%) hue-rotate(237deg) brightness(99%) contrast(104%);
+}
+footer ul {
+  padding-left: 5%;
+  margin: 0;
+  list-style-type: none;
+}
+footer li {
+  padding: 1%;
+}
+footer li i {
+  width: 20px;
+  padding-right: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+/*********************************************************/
