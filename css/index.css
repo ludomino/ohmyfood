@@ -101,7 +101,7 @@ nav {
 .slide .btn-slide {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   background-color: #f7f7f7;
   padding: 20px;
@@ -113,7 +113,8 @@ nav {
 }
 .slide .btn-slide i {
   color: grey;
-  padding-right: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
   font-size: 20px;
 }
 .slide .btn-slide p {
@@ -146,7 +147,7 @@ nav {
 
 
 /*********************** RESTAURANTS *****************************/
-.restaurants {
+#restaurants {
   padding: 10% 5%;
   background-color: #f7f7f7;
   height: 100%;
