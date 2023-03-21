@@ -5,12 +5,12 @@ body {
 }
 
 body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
   position: relative;
-  height: 100%;
+  text-decoration: none;
 }
 
 
@@ -21,65 +21,64 @@ h2 {
 
 /*********************** HEADER *****************************/
 nav {
-  padding: 3%;
-  display: flex;
   align-items: center;
+  display: flex;
+  padding: 3%;
 }
 
 .logo {
-  width: 50%;
   margin: auto;
+  width: 50%;
 }
 
 .search {
-  padding: 13px;
-  display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #eaeaea;
+  display: flex;
   font-size: 20px;
+  justify-content: center;
+  padding: 13px;
 }
-.search .location {
+.search__location {
   padding-right: 1%;
 }
-.search input {
-  text-align: center;
-  font-size: 1rem;
-  border: none;
+.search__input {
   background-color: #eaeaea;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .container {
-  height: 350px;
+  align-items: center;
+  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 350px;
   justify-content: center;
-  background-color: #f7f7f7;
-}
-.container h2 {
   text-align: center;
+
+}
+.container__title {
   margin: 10px;
 }
-.container p {
+.container__text {
   font-style: italic;
   font-size: 18px;
-  text-align: center;
-  margin: 10px;
 }
 
-.btn {
-  text-decoration: none;
+.container__btn {
   background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 1px 4px 14px 1px #b6b6b7;
   color: #fff;
   font-size: 20px;
-  border-radius: 50px;
-  border: none;
   padding: 20px;
   margin: 20px;
-  box-shadow: 1px 4px 14px 1px #b6b6b7;
+  text-decoration: none;
 }
-.btn:hover {
+.container__btn:hover {
   box-shadow: rgb(149, 157, 165) 0px 16px 40px;
 }
 /*********************************************************/
@@ -99,27 +98,27 @@ nav {
   justify-content: space-around;
 }
 .slide .btn-slide {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
   background-color: #f7f7f7;
-  padding: 20px;
-  box-shadow: 1px 4px 14px 1px #d7d8d9;
-  width: 95%;
   border-radius: 20px;
   border: none;
+  box-shadow: 1px 4px 14px 1px #d7d8d9;
   cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  position: relative;
+  width: 95%;
 }
 .slide .btn-slide i {
   color: grey;
-  padding-right: 5%;
-  padding-left: 5%;
   font-size: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .slide .btn-slide p {
   font-size: 18px;
-    font-weight: bold;
+  font-weight: bold;
   margin: 0;
 }
 .slide .btn-slide:hover {
@@ -129,17 +128,17 @@ nav {
   color: #9356DC;
 }
 .slide .btn-slide::before {
-  content: attr(value);
-  width: 30px;
-  height: 30px;
-  background-color: #9356DC;
-  color: #FFF;
-  border-radius: 50%;
-  position: absolute;
-  left: -10px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  color: #FFF;
+  content: attr(value);
+  background-color: #9356DC;
+  border-radius: 50%;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  left: -10px;
+  position: absolute;
+  width: 30px;
 }
 
 /*********************************************************/
@@ -148,33 +147,12 @@ nav {
 
 /*********************** RESTAURANTS *****************************/
 #restaurants {
-  padding: 10% 5%;
   background-color: #f7f7f7;
   height: 100%;
+  padding: 10% 5%;
   padding-bottom: 10%;
 }
 
-.like {
-  font-size: 30px;
-  cursor: pointer;
-  position: relative;
-}
-
-.like .fa-heart {
-  position: absolute;
-}
-
-.like-solid {
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: opacity 0.5s ease-in-out;
-}
-.like-solid:hover, .like-solid .like-solid {
-  opacity: 1;
-}
 
 .restaurant-card {
   background-color: white;
@@ -184,22 +162,22 @@ nav {
   width: 100%;
 }
 .restaurant-card a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 .restaurant-card .restaurant-img {
-  width: 100%;
-  height: 200px;
   border-radius: 20px 20px 0 0;
+  height: 200px;
   object-fit: cover;
+  width: 100%;
 }
 .restaurant-card .restaurant-desc {
-  display: flex;
-  padding: 10px;
-  height: 50px;
-  background-color: #fff;
   border-radius: 0 0 20px 20px;
+  background-color: #fff;
+  display: flex;
+  height: 50px;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .restaurant-card .restaurant-desc .desc-text h3 {
@@ -224,17 +202,39 @@ nav {
 }
 
 .new::before {
-  content: "Nouveau";
-  position: absolute;
-  height: 2rem;
-  width: 5rem;
   background-color: #99E2D0;
-  color: #008766;
-  display: grid;
-  place-items: center;
-  top: 1rem;
-  right: 1rem;
   border-radius: 5%;
+  color: #008766;
+  content: "Nouveau";
+  display: grid;
+  height: 2rem;
+  position: absolute;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  width: 5rem;
+}
+
+.like {
+  cursor: pointer;
+  font-size: 30px;
+  position: relative;
+}
+
+.like .fa-heart {
+  position: absolute;
+}
+
+.like .like-solid {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-background-clip: text;
+}
+.like-solid:hover, .like-solid {
+  opacity: 1;
 }
 /*********************************************************/
 
@@ -242,29 +242,29 @@ nav {
 
 /*********************** FOOTER *****************************/
 footer {
-  padding-bottom: 26px;
   background-color: #353535;
+  padding-bottom: 26px;
 }
 footer .footer-logo {
+  filter: invert(100%) sepia(8%) saturate(4%) hue-rotate(237deg) brightness(99%) contrast(104%);
   padding: 5% 0% 5% 5%;
   width: 25%;
-  filter: invert(100%) sepia(8%) saturate(4%) hue-rotate(237deg) brightness(99%) contrast(104%);
 }
 footer ul {
-  padding-left: 5%;
-  margin: 0;
   list-style-type: none;
+  margin: 0;
+  padding-left: 5%;
 }
 footer li {
   padding: 1%;
 }
 footer li i {
-  width: 20px;
   padding-right: 5px;
+  width: 20px;
 }
 footer a {
-  text-decoration: none;
   color: #FFF;
+  text-decoration: none;
 }
 /*********************************************************/
 /*********************** la palette du gout *****************************/

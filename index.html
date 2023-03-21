@@ -29,20 +29,20 @@
   <body>
     <header >
       <!-- Navbar -->
-      <nav class="navbar">
+      <nav>
         <img class="logo" src="images/logo/ohmyfood.png" alt="logo-Ohmyfood">
       </nav>
 
       <!-- Search -->
       <form class="search">
-        <div class="location"><i class="fa-solid fa-location-dot"></i></div>
-        <input value="Paris, Belleville" />
+        <div class="search__location"><i class="fa-solid fa-location-dot"></i></div>
+        <input class="search__input" value="Paris, Belleville" />
       </form>
       <!-- Header -->
       <div class="container">
-        <h2>Réservez le menu qui vous convient</h2>
-        <p>Découvrez des restaurants d'exception, sélectionnés pas nos soins.</p>
-        <a href="#restaurants" class="btn"> Explorer nos restaurants</a>
+        <h2 class="container__title">Réservez le menu qui vous convient</h2>
+        <p class="container__text">Découvrez des restaurants d'exception, sélectionnés pas nos soins.</p>
+        <a href="#restaurants" class="container__btn"> Explorer nos restaurants</a>
       </div>
     </header>
 
@@ -75,17 +75,17 @@
               src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
               alt="la_palette_du_gout"
             />
+            <div class="restaurant-desc">
+              <div class="desc-text">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+              </div>
           </a>
-          <div class="restaurant-desc">
-            <div class="desc-text">
-              <h3>La palette du goût</h3>
-              <p>Ménilmontant</p>
+              <div class="like">
+                <i class="fa-regular fa-heart like-regular"></i>
+                <i class="fa-solid fa-heart like-solid"></i>
+              </div>
             </div>
-            <div class="like">
-              <i class="fa-regular fa-heart like-regular"></i>
-              <i class="fa-solid fa-heart like-solid"></i>
-            </div>
-          </div>
         </article>
         <article class="restaurant-card new">
           <a href="menu/la_note_enchantée.html">
