@@ -270,21 +270,21 @@ footer a {
 /*********************** la palette du gout *****************************/
 
 
-.menu-btn {
+.menu-card {
   overflow: hidden;
   margin: 10px;
   display: flex;
   background-color: #fff;
   border-radius: 20px;
 }
-.menu-btn .title-menu {
+.menu-card .title-menu {
   display: block;
   width: 100px;
   flex: 1;
   padding: 10px;
 }
-.menu-btn h3,
-.menu-btn p {
+.menu-card h3,
+.menu-card p {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
@@ -292,14 +292,14 @@ footer a {
   overflow: hidden;
   margin: 0;
 }
-.menu-btn .prix {
+.menu-card .prix {
   display: flex;
   font-weight: 700;
   align-items: flex-end;
   justify-content: flex-end;
   padding: 10px;
 }
-.menu-btn .menu-btn-check {
+.menu-card .menu-card-check {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -308,14 +308,14 @@ footer a {
   background-color: #99E2D0;
   transition: 1s;
 }
-.menu-btn:hover .menu-btn-check {
+.menu-card:hover .menu-card-check {
   margin: 0rem 0rem 0rem 0rem;
 }
-.menu-btn .check {
+.menu-card .check {
   font-size: 1.5rem;
   color: #fff;
 }
-.menu-btn:hover .check {
+.menu-card:hover .check {
   transition: 1s;
   transform: rotate(360deg);
 }
