@@ -154,24 +154,24 @@ nav {
 }
 
 
-.restaurant-card {
+.restaurant_card {
   background-color: white;
   border-radius: 20px;
   box-shadow: 1px 4px 14px 1px #d7d8d9;
   margin-bottom: 5%;
   width: 100%;
 }
-.restaurant-card a {
+.restaurant_card a {
   color: black;
   text-decoration: none;
 }
-.restaurant-card .restaurant-img {
+.restaurant_card .restaurant_card-img {
   border-radius: 20px 20px 0 0;
   height: 200px;
   object-fit: cover;
   width: 100%;
 }
-.restaurant-card .restaurant-desc {
+.restaurant_card .restaurant_card-info {
   border-radius: 0 0 20px 20px;
   background-color: #fff;
   display: flex;
@@ -180,20 +180,20 @@ nav {
   padding: 10px;
 }
 
-.restaurant-card .restaurant-desc .desc-text h3 {
+.restaurant_card .restaurant_card-info .restaurant_card-text h3 {
   margin: 0;
   margin-bottom: 2%;
   padding: 0;
 }
 
-.restaurant-card .restaurant-desc .desc-text p {
+.restaurant_card .restaurant_card-info .restaurant_card-text p {
   font-size: 18px;
   font-style: italic;
   margin: 0;
   padding: 0;
 }
 
-.restaurant-card .restaurant-desc .like {
+.restaurant_card .restaurant_card-info .like {
   padding-right: 15%;
 }
 
