@@ -19,7 +19,99 @@ h2 {
   font-weight: bold;
 }
 
+
+
 /*********************** HEADER *****************************/
+@keyframes loading {
+  from {
+    opacity: 100%;
+
+  }
+  to {
+    opacity: 0;
+  }
+}
+.loading {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-color:rgb(252, 252, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  pointer-events: none;
+  animation: 0.2s linear 2s loading;
+  animation-fill-mode: forwards;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #9356DC;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  background-color: #FF79DA;
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  background-color: #99E2D0;
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  background-color: #9356DC;
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  background-color: #FF79DA;
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
 nav {
   align-items: center;
   display: flex;
@@ -197,6 +289,8 @@ nav {
   padding-right: 15%;
 }
 
+
+
 .new {
   position: relative;
 }
@@ -232,6 +326,7 @@ nav {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   -webkit-background-clip: text;
+
 }
 .like-solid:hover, .like-solid {
   opacity: 1;
@@ -269,6 +364,7 @@ footer a {
 /*********************************************************/
 /*********************** la palette du gout *****************************/
 
+.menu-container
 
 .menu-card {
   overflow: hidden;
@@ -366,6 +462,7 @@ footer a {
   padding-right: 4rem;
   padding-bottom: 2rem;
 }
+
 .menu .menu-box .menu-container {
   animation: fadeIn 0.5s both;
 }
