@@ -362,9 +362,50 @@ footer a {
   text-decoration: none;
 }
 /*********************************************************/
-/*********************** la palette du gout *****************************/
+/*********************** menu *****************************/
 
-.menu-container
+/**************** animation *****************************/
+.list-menu-starter, .list-menu-main, .list-menu-dessert {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.list-menu-starter {
+  animation: cardFadeIn 1s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.list-menu-main {
+  animation: cardFadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.list-menu-dessert {
+  animation: cardFadeIn 1s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* .list-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+} */
+
+/*****************************************************************/
 
 .menu-card {
   overflow: hidden;
@@ -373,6 +414,7 @@ footer a {
   background-color: #fff;
   border-radius: 20px;
 }
+
 .menu-card .title-menu {
   display: block;
   width: 100px;
@@ -463,21 +505,6 @@ footer a {
   padding-bottom: 2rem;
 }
 
-.menu .menu-box .menu-container {
-  animation: fadeIn 0.5s both;
-}
-.menu .menu-box .menu-container:nth-child(1) {
-  animation-delay: 500ms;
-}
-.menu .menu-box .menu-container:nth-child(2) {
-  animation-delay: 1000ms;
-}
-.menu .menu-box .menu-container:nth-child(3) {
-  animation-delay: 1500ms;
-}
-.menu .menu-box .menu-container:nth-child(4) {
-  animation-delay: 2000ms;
-}
 .menu .order {
   position: relative;
   display: flex;
