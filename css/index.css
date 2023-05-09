@@ -23,6 +23,11 @@ h3 {
   font-size: 18px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /*********************** HEADER *****************************/
 /*********************** animation loading *****************************/
 .loading {
@@ -329,11 +334,12 @@ nav {
 
 .like .like-solid {
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(#FF79DA, #9356DC);
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 
 .like-solid:hover, .like-solid {
@@ -451,6 +457,7 @@ footer a {
   background-color: #99E2D0;
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out; /* Safari */
+  -moz-transition: all 1s ease-in-out; /* mozzila */
 }
 .menu-card:hover .menu-card-check {
   margin: 0rem 0rem 0rem 0rem;
@@ -461,9 +468,11 @@ footer a {
 }
 .menu-card:hover .check {
   transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out; /* Safari */
   transform: rotate(360deg);
+  -webkit-transition: all 1s ease-in-out; /* Safari */
   -webkit-transform: rotate(360deg); /* Safari */
+  -moz-transition: all 1s ease-in-out; /* mozzila */
+  -moz-transform: rotate(360deg); /* mozzila */
 }
 
 
@@ -567,6 +576,15 @@ footer a {
 
   .restaurant_card .restaurant_card-info .like {
     padding-right: 10%;
+  }
+
+  /* Desktop devices */
+.like .like-solid {
+    opacity: 0;
+  }
+  .like-solid:hover, .like-solid:focus {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
   }
 
   footer {
