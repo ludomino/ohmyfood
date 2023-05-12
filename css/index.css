@@ -214,6 +214,8 @@ nav {
   position: relative;
   width: 95%;
   text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 .slide .btn-slide i {
   color: grey;
